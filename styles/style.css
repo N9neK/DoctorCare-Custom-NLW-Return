@@ -630,6 +630,7 @@ footer p {
     text-transform: uppercase;
   }
 
+  nav#navigation .menu a.button.active,
   nav#navigation .menu a.button:hover {
     background-color: var(--primary-color);
     color: white;
@@ -650,6 +651,7 @@ footer p {
     transition: opacity 0.4s;
   }
 
+  nav#navigation .menu li a.active,
   nav#navigation .menu li a:hover {
     opacity: 1;
     font-weight: 700;
@@ -674,15 +676,18 @@ footer p {
     background-color: white;
   }
 
+  nav#navigation .menu li a.active::after,
   nav#navigation .menu li a:hover::after {
     padding-inline: 1.3rem;
     width: 100%;
   }
 
+  nav#navigation.scroll .menu li a.active,
   nav#navigation.scroll .menu li a:hover {
     opacity: 1;
   }
 
+  nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover {
     background-color: var(--brand-light-2);
     color: var(--primary-color);
