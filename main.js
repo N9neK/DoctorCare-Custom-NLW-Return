@@ -2,6 +2,7 @@
 // Number = Números
 // Boolean = True || False
 
+let navbar = document.getElementById("navigation")
 window.addEventListener('scroll', onScroll)
 
 onScroll()
@@ -48,9 +49,9 @@ function activateMenuAtCurrentSection(section) {
 //Mostrar o Nav ao fazer o Scroll
 function showNavOnScroll() {
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    navbar.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    navbar.classList.remove('scroll')
   }
 }
 
